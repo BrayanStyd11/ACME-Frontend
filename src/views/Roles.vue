@@ -70,10 +70,7 @@ export default {
     },
     methods:{
         getRoles(){
-            let headers={
-                Accept: '*/*'
-            }
-            this.$axios.get(`${this.backendUrl}/roles`, {headers}).then((response)=>{
+            this.$axios.get(`${this.backendUrl}/roles`).then((response)=>{
                 this.roles = response.data.data;
             });
         },
