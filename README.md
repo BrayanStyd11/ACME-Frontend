@@ -5,6 +5,11 @@
 npm install
 ```
 
+## Project configuration
+```
+change .env in line 'VUE_APP_BACKEND_URL' change the backend url if is necesary 
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
