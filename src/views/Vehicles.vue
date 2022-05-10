@@ -96,12 +96,12 @@
                                     <td>{{vehicle.brand}}</td>
                                     <td v-if="vehicle.users && vehicle.users.length > 0">            
                                         <div v-for="(user, key) in vehicle.users" :key="key">
-                                            <p v-if="user.id_rol === 1">{{user.first_name+' '+user.second_name+' '+user.lastname}}</p>
+                                            <p v-if="user.id_rol === 1 || user.id_rol === '1'">{{user.first_name+' '+user.second_name+' '+user.lastname}}</p>
                                         </div>
                                     </td>
                                     <td v-if="vehicle.users && vehicle.users.length > 0">            
                                         <div v-for="(user, key) in vehicle.users" :key="key">                                            
-                                            <p v-if="user.id_rol === 2">{{user.first_name+' '+user.second_name+' '+user.lastname}}</p>
+                                            <p v-if="user.id_rol === 2 || user.id_rol === '2'">{{user.first_name+' '+user.second_name+' '+user.lastname}}</p>
                                         </div>
                                     </td>
                                 </tr>
